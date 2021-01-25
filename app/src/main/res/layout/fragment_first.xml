@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffb39c"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="123dp"
+        android:background="#0000BCD4"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Hello World!"
+
+        android:textColor="#706F6F"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/About_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="151dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/about"
+        android:textColor="#706F6F"
+        android:textSize="18sp"
+
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:backgroundTint="#FF31FFE2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plumeria"
+        tools:text="@string/about"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/plumeria"
+        android:layout_width="159dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="@string/image"
+        android:src="@mipmap/ic_launcher_plum"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/About_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first"
+        app:layout_constraintVertical_bias="0.443"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
