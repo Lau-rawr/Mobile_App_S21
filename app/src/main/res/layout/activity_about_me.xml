@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#31FFE2"
+    tools:context=".AboutMe">
+
+    <TextView
+        android:id="@+id/myName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="#0000BCD4"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/laura_worboys"
+        android:textColor="#706F6F"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/aboutPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="204dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="onClick"
+        android:text="@string/previous"
+        android:textColor="#706F6F"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:backgroundTint="#ffb39c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/schoolEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000BCD4"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/worboys_l_northeastern_edu"
+        android:textColor="#706F6F"
+        android:textSize="22sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/aboutPrevious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myName"
+        app:layout_constraintVertical_bias="0.402" />
+</androidx.constraintlayout.widget.ConstraintLayout>
