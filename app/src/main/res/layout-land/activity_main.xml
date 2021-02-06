@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffb39c"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.NUMSD21SLauraWorboys.AppBarOverlay"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/helloMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:background="#0000BCD4"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Hello World!"
+            android:textColor="#706F6F"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/plumeriaMain"
+            android:layout_width="75dp"
+            android:layout_height="71dp"
+            android:contentDescription="@string/plumeria"
+            app:layout_constraintBottom_toTopOf="@+id/aboutMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helloMain"
+            app:layout_constraintVertical_bias="0.541"
+            app:srcCompat="@mipmap/ic_launcher_plum" />
+
+        <Button
+            android:id="@+id/aboutMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="onClick"
+            android:text="@string/about"
+            android:textColor="#706F6F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="#FF31FFE2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helloMain"
+            app:layout_constraintVertical_bias="0.416" />
+
+        <Button
+            android:id="@+id/ClickyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="onClick"
+            android:text="@string/clicky_clicky"
+            android:textColor="#706F6F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="#FF31FFE2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutMain"
+            app:layout_constraintVertical_bias="0.046" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
