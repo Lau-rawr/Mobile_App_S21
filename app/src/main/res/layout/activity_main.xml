@@ -4,33 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffb39c"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.NUMSD21SLauraWorboys.AppBarOverlay">
+        android:theme="@style/Theme.NUMSD21SLauraWorboys.AppBarOverlay"/>
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/purple_200"
-            app:popupTheme="@style/Theme.NUMSD21SLauraWorboys.PopupOverlay" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    </com.google.android.material.appbar.AppBarLayout>
+        <TextView
+            android:id="@+id/helloMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:background="#0000BCD4"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Hello World!"
+            android:textColor="#706F6F"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <include layout="@layout/content_main" />
+        <ImageView
+            android:id="@+id/plumeriaMain"
+            android:layout_width="149dp"
+            android:layout_height="128dp"
+            android:contentDescription="@string/plumeria"
+            app:layout_constraintBottom_toTopOf="@+id/aboutMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helloMain"
+            app:srcCompat="@mipmap/ic_launcher_plum" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:contentDescription="@string/todo"
-        android:visibility="gone"
-        app:srcCompat="@android:drawable/ic_input_add"
-        tools:visibility="gone" />
+        <Button
+            android:id="@+id/aboutMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="onClick"
+            android:text="@string/about"
+            android:textColor="#706F6F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="#FF31FFE2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helloMain" />
+
+        <Button
+            android:id="@+id/ClickyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="53dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="onClick"
+            android:text="@string/clicky_clicky"
+            android:textColor="#706F6F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="#FF31FFE2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutMain" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
