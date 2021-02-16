@@ -21,6 +21,7 @@
             android:id="@+id/aboutMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:background="@drawable/button_background"
             android:fontFamily="sans-serif-condensed-medium"
             android:onClick="onClick"
@@ -32,6 +33,7 @@
             app:backgroundTint="#FF31FFE2"
             app:layout_constraintBottom_toTopOf="@+id/ClickyButton"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/plumeriaMain" />
 
@@ -53,15 +55,14 @@
             android:id="@+id/plumeriaMain"
             android:layout_width="149dp"
             android:layout_height="128dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:contentDescription="@string/plumeria"
             android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/helloMain"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/aboutMain"
             app:srcCompat="@mipmap/ic_launcher_plum" />
 
         <Button
