@@ -39,10 +39,6 @@ public class ClickyClicky extends AppCompatActivity {
             case R.id.button_F:
                 alphaButton.setText(R.string.F);
                 break;
-
-
         }
     }
-
-
 }

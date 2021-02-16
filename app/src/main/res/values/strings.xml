@@ -31,4 +31,17 @@
     <string name="worboys_l_northeastern_edu">worboys.l@northeastern.edu</string>
     <string name="clicky_clicky">Clicky Clicky</string>
     <string name="press_a_button">Press A Button!</string>
+    <string name="link_collector">Link Collector</string>
+    <string name="add_links_to_page">Add links to page</string>
+    <string name="item_name">TextView</string>
+    <string name="temp_holder">temp holder</string>
+    <string name="url">url</string>
+
+    <string name="enter_url_here">Enter URL Here</string>
+    <string name="url_name">URL Name</string>
+    <string name="enter_actual_url_here">Enter Actual URL Here</string>
+    <string name="UrlNameAlert">URL Name</string>
+    <string name="UrlAddressAlert">URL Address</string>
+    <string name="enter_url_name_url_address">Enter URL Name URL Address</string>
+
 </resources>
