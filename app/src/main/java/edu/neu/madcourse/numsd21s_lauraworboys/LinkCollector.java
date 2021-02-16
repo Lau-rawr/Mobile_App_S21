@@ -95,7 +95,7 @@ public class LinkCollector extends AppCompatActivity {
         urlAddressInput.setHint("Actual URL");
 
         // Specify the type of input expected type variation
-        urlNameInput.setInputType( InputType.TYPE_TEXT_VARIATION_NORMAL);
+        urlNameInput.setInputType( InputType.TYPE_CLASS_TEXT);
         urlAddressInput.setInputType( InputType.TYPE_TEXT_VARIATION_URI);
 
         //layout
