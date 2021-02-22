@@ -22,6 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/button_background"
             android:fontFamily="sans-serif-condensed-medium"
             android:onClick="onClick"
@@ -58,19 +59,18 @@
             android:layout_marginTop="20dp"
             android:contentDescription="@string/plumeria"
             android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/aboutMain"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/helloMain"
-            app:layout_constraintBottom_toTopOf="@+id/aboutMain"
             app:srcCompat="@mipmap/ic_launcher_plum" />
 
         <Button
             android:id="@+id/ClickyButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/button_background"
             android:fontFamily="sans-serif-condensed-medium"
             android:onClick="onClick"
@@ -89,7 +89,6 @@
             android:id="@+id/LinkButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="172dp"
             android:background="@drawable/button_background"
             android:fontFamily="sans-serif-condensed-medium"
             android:onClick="onClick"
@@ -99,11 +98,30 @@
             android:textStyle="bold"
             android:visibility="visible"
             app:backgroundTint="#FF31FFE2"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/locatorButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ClickyButton"
             tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/locatorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:onClick="onClick"
+            android:text="@string/locator"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinkButton"
+
+            android:textColor="#706F6F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="#FF31FFE2"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-medium"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

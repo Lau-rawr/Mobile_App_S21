@@ -43,5 +43,20 @@
     <string name="UrlNameAlert">URL Name</string>
     <string name="UrlAddressAlert">URL Address</string>
     <string name="enter_url_name_url_address">Enter URL Name URL Address</string>
+    <string name="locator">Locator</string>
+    <string name="title_activity_locator">locator</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+
+
+    <string name="allowLocation">Must allow location to get coordinates</string>
+    <string name="latitude">latitude</string>
+    <string name="current_latitude">current latitude</string>
+    <string name="locate_me">locate me</string>
+    <string name="longitude">longitude</string>
+    <string name="current_longitude">current longitude</string>
+
 
 </resources>

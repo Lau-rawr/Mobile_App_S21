@@ -15,7 +15,6 @@ public class AboutMe extends AppCompatActivity {
     }
     public void onClick(View view) {
 
-
         switch (view.getId()) {
             //code for each button
             case R.id.aboutPrevious:

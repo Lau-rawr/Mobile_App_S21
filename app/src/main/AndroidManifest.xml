@@ -3,6 +3,7 @@
     package="edu.neu.madcourse.numsd21s_lauraworboys">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -11,9 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_lw_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NUMSD21SLauraWorboys">
-        <activity android:name=".LinkCollector"
-         android:configChanges="orientation|screenSize">
-        </activity>
+        <activity
+            android:name=".locator"
+            android:label="@string/title_activity_locator"
+            android:theme="@style/Theme.NUMSD21SLauraWorboys.NoActionBar" />
+        <activity
+            android:name=".LinkCollector"
+            android:configChanges="orientation|screenSize" />
         <activity android:name=".AboutMe" />
         <activity android:name=".ClickyClicky" />
         <activity
@@ -24,7 +29,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
 
