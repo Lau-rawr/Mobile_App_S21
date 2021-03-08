@@ -2,13 +2,11 @@
     <string name="app_name">NUMSD21S-LauraWorboys</string>
     <string name="action_settings">Settings</string>
 
-
     <string name="clicky_clicky_label">Clicky Clicky</string>
 
     <string name="about">About</string>
 
     <string name="plumeria_image">plumeria image</string>
-
 
     <string name="d">D</string>
     <string name="e">E</string>
@@ -50,13 +48,39 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
 
-
     <string name="allowLocation">Must allow location to get coordinates</string>
     <string name="latitude">latitude</string>
     <string name="current_latitude">current latitude</string>
     <string name="locate_me">locate me</string>
     <string name="longitude">longitude</string>
     <string name="current_longitude">current longitude</string>
+    <string name="title_activity_at_your_service">at_your_service</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="at_your_service">At Your Service</string>
+    <string name="button">Button</string>
+
+    <string name="ride1" />
+    <string name="haunted_mansion">Haunted Mansion</string>
+
+    <string name="done">Done</string>
+    <string name="ride_info">Getting Ride Info</string>
+    <string name="space">\\s</string>
+    <string name="duration">Duration :</string>
+    <string name="opened_on">Opened On :</string>
+    <string name="textview">TextView</string>
+    <string name="magic_kingdom_ride_info">Magic Kingdom Ride Info</string>
+    <string name="select_ride">Select Ride</string>
+    <string name="ride_duration">Ride Duration :</string>
+    <string name="minutes">minutes</string>
+    <string name="info_progress">Info Progress</string>
+    <string name="date">date</string>
+    <string name="height_restriction">Height Restriction :</string>
+    <string name="heightres">heightRes</string>
+    <string name="inches">inches</string>
+    <string name="getting_ride_info">Getting Ride Info</string>
+    <string name="_0">0</string>
 
 
 </resources>

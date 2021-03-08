@@ -18,6 +18,27 @@
         android:layout_height="match_parent">
 
 
+        <Button
+            android:id="@+id/atYourService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="onClick"
+            android:text="@string/at_your_service"
+
+            android:textColor="#706F6F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="#FF31FFE2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.908"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.125" />
+
         <TextView
             android:id="@+id/helloMain"
             android:layout_width="wrap_content"
